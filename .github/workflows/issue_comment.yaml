@@ -1,0 +1,19 @@
+name: Create comment when there is an issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dumb Github Context
+        run: echo '${{ toJSON(github.event) }}' | jq
+        shell: bash
+  # goodbye:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Goodbye World
+  #       run: echo "Akeron says good bye"
+  #       shell: bash

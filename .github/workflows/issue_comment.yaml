@@ -3,6 +3,8 @@ name: Create comment when there is an issue
 on:
   issues:
     types: [opened]
+    permissions:
+      issues: write  
 
 jobs:
   comment:

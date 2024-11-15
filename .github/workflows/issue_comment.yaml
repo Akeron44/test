@@ -18,9 +18,8 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            This is a multi-line test comment
-            - With GitHub **Markdown** :sparkles:
-            - Created by [create-or-update-comment][1]
+            This is a multi-line test comment from Akeron
+            - Listen to this song to be able to fix this issue[1]
 
-            [1]: https://github.com/peter-evans/create-or-update-comment
+            [1]: https://www.youtube.com/watch?v=3JWTaaS7LdU&list=PLGBuKfnErZlAq0H6P6doTx1EiUP5L_Q3-
           reactions: '+1'
